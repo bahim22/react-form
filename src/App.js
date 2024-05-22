@@ -12,12 +12,12 @@ import Copyright from './components/CopyrightFoot';
 // import ProjMain from './components/ProjMain.js';
 // import SkillList from './SkillList';
 // import CardMain from './components/CardMain';
-// import ContactForm from './ContactForm';
+import AppAppBar from './Menu24';
 
 function App() {
     return (
         <>
-            <MenuBar />
+            <AppAppBar />
             <About />
             <Projects />
             <Contact />
