@@ -12,7 +12,7 @@ import Copyright from './components/CopyrightFoot';
 // import ProjMain from './components/ProjMain.js';
 // import SkillList from './SkillList';
 // import CardMain from './components/CardMain';
-import AppAppBar from './Menu24';
+import AppAppBar from './components/Menu24';
 
 function App() {
     return (
