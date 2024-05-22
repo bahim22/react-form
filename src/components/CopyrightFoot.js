@@ -1,28 +1,38 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import MuiLink from '@mui/material/Link';
-import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
+import { LinkedIn } from '@mui/icons-material';
+// import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
 
-
-function Copyright() {
+export default function Copyright() {
     return (
-        <Typography variant='body2' color='text.secondary' align='center'>
-            {'Copyright © '}
-            <Link color='inherit' href='https://m.facebook.com/people/Infinite-Success-Virtual-LLC/61557695124632'>
-                Infinite Success Virtual
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
+        <>
+            <Typography variant='body2' color='text.secondary' align='center'>
+                {'Copyright © '}
+                <MuiLink color='inherit' href='https://himabalde.netlify.app'>
+                    Hima Portfolio
+                </MuiLink>{' '}
+                <MuiLink color='inherit' href='https://github.com/bahim22'>
+                    GitHub Portfolio
+                </MuiLink>{' '}
+                {new Date().getFullYear()}.
+                <LinkedIn component={'link'} htmlColor='blue' href='https://linkedin.com/in/himabalde'>
+                    LinkedIn Profile
+                </LinkedIn>
+                {new Date().getFullYear()}
+                {'.'}
+            </Typography>
+        </>
     );
 }
 
-export default function Copyright() {
+/** 
+function CopyrightOld() {
     return (
         <ScopedCssBaseline>
             <Typography variant='body2' color='text.secondary' align='center'>
                 {'Copyright © '}
-                <MuiLink color='inherit' href='https://himabalde.netlify.com'>
+                <MuiLink color='inherit' href='https://himabalde.netlify.app'>
                     Dionysus Era
                 </MuiLink>{' '}
                 <MuiLink color='inherit' href='https://github.com/bahim22'>
@@ -33,3 +43,4 @@ export default function Copyright() {
         </ScopedCssBaseline>
     );
 }
+*/

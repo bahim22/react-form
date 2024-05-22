@@ -13,11 +13,7 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": [
-        "import",
-        "react",
-        "prettier"
-    ],
+    "plugins": ["import", "react", "prettier"],
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
@@ -33,16 +29,12 @@
         "no-restricted-imports": [
             "error",
             {
-                "patterns": [
-                    "@mui/*/*/*",
-                    "!@mui/material/test-utils/*"
-                ]
+                "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
             }
-        ]
+        ],
+        "no-confusing-arrow": ["off", { "allowParens": true }]
     },
-    "ignorePatterns": [
-        "node_modules/"
-    ],
+    "ignorePatterns": ["node_modules/"],
     "settings": {
         "react": {
             "version": "detect"
