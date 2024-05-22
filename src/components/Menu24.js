@@ -13,8 +13,8 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ToggleColorMode from './ToggleColorMode';
-// import LensBlurIcon from '@mui/icons-material/LensBlur';
-import Avatar from '@mui/material/Avatar';
+import LensBlurIcon from '@mui/icons-material/LensBlur';
+// import Avatar from '@mui/material/Avatar';
 
 function AppAppBar({ mode, toggleColorMode }) {
     const [open, setOpen] = React.useState(false);
@@ -72,8 +72,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                             alignItems: 'center',
                             px: 0,
                         }}>
-                        {/* <LensBlurIcon /> */}
-                        <Avatar alt='Icon' src='/rocket.png' />
+                        <LensBlurIcon />
+                        // <Avatar alt='Icon' src='/rocket.png' />
                         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                             <Button variant='text' color='info' size='small' onClick={() => scrollToSection('about')}>
                                 About
