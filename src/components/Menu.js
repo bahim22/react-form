@@ -10,7 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
+// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 // import AdbIcon from '@mui/icons-material/Adb';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -72,7 +72,7 @@ const MenuBar = () => {
                     <MenuTwoToneIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 0 }} />
                     <Typography
                         variant='h5'
-                        noWrap
+                        // noWrap
                         component='a'
                         href='/'
                         sx={{
@@ -106,8 +106,8 @@ const MenuBar = () => {
                             }}
                             keepMounted
                             transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
+                                vertical: 'bottom',
+                                horizontal: 'right',
                             }}
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
@@ -123,7 +123,7 @@ const MenuBar = () => {
                             {pages2.map((page) => (
                                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
                                     <Typography textAlign='left'>{page.About}</Typography>
-                                    <br/>
+                                    <br />
                                     <Typography textAlign='left'>{page.Projects}</Typography>
                                     <Typography textAlign='left'>{page.Contact}</Typography>
                                 </MenuItem>
@@ -173,11 +173,9 @@ const MenuBar = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 1 }}>
-                        <Tooltip title='Bottom Web Page Modules'>
-                            <IconButton onClick={handleOpenUserMenu} sx={{ px: 1 }}>
-                                <Avatar alt='Icon' src='/rocket.png' />
-                            </IconButton>
-                        </Tooltip>
+                        <IconButton onClick={handleOpenUserMenu} sx={{ px: 1 }}>
+                            <Avatar alt='Icon' src='/rocket.png' />
+                        </IconButton>
                         <Menu
                             sx={{ my: '45px' }}
                             id='menu-appbar'
